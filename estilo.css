@@ -1,4 +1,4 @@
-.navbar-brand {
+/*.navbar-brand {
   font-size: 1.5rem;
 }
 
@@ -17,7 +17,7 @@
   top: 0;
   right: 0;
   transform: translate(50%, -50%);
-}
+}*/
 
 .carousel-item {
   height: 100vh;
@@ -41,8 +41,150 @@
 footer{
   margin: 20px 0px 0px 0px;
 }
+.carousel-item {
+  height: 100vh;
+}
 
-.carousel-item img{
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.body{
+  background-color: rgb(255, 255, 255);
+}
+.contenedor .form .form-header .formtitle{
+  font-weight: normal;
+  font-family: sans-serif;
+  color: #ff851b;
+  text-align: center;
+  padding: 14px 0;
+}
+
+.contenedor .form .form-header .form-title span{
+  color:rgb(255, 253, 253);
+
+}
+
+.contenedor .form{
+  background: #17171799;
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+  padding: 5px 35px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  text-align: center;
+
+}
+.contenedor .form .form-label{
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: cursive;
+  position: relative;
+  text-align: center;
+
+}
+.contenedor .form .form-input, .form-textarea{
+  background: #ebe7e7b3;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #000000;
   width: 100%;
-  height: 600px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #f0ffff;
+  text-align: center;
+
+
+}
+.contenedor .form .form-textarea{
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+  text-align: center;
+
+}
+
+.titulo{
+  color:#8a2be2;
+  text-align: center;
+}
+.marco{
+  width:100%;
+  height: 300px;
+  border: 1px solid #808080;
+  text-align: center;
+  
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container-title{
+  text-align: center;
+  font-family: monospace;
+  padding:30px;
+  background-color: #eee;
+  margin-bottom: 50px;
+  color: #000;
+
+}
+
+.container-img{
+  background-color: #eee;
+  flex: 1;
+}
+.container-info-producto{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.container-precio{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-precio span{
+  font-size: 24px;
+  font-weight: 300;
+}
+.container-detalle-prod{
+  padding: 30px 0;
+}
+
+
+/*body{
+  background: linear-gradient(#ffff91,#ffffdb);
+
 }
