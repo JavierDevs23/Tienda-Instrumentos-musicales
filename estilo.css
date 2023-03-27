@@ -28,3 +28,16 @@
   object-fit: cover;
 }
 
+.contenedor{
+  height: 70vh;
+}
+
+.registro form {
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+footer{
+  margin: 20px 0px 0px 0px;
+}
