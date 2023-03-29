@@ -254,3 +254,18 @@ img{
   width: 40px;
   height: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+  .card{
+    transition: 1s;
+  }
+  
+  .card:hover{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+  }
+
+  .registro, .sesion{
+    height: 110vh;
+  }
+}
