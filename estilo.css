@@ -27,8 +27,8 @@ footer{
 }
 
 
-.body{
-  background-color: rgb(255, 255, 255);
+body{
+  background-color: #fff;
 }
 
 .contenedor .form .form-header .formtitle{
@@ -149,6 +149,24 @@ img{
 }
 
 .registro, .sesion{
-  height: 80vh;
+  height: 100vh;
 }
 
+.card{
+  transition: 1s;
+}
+
+.card:hover{
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.logo img{
+  width: 40px;
+  height: 40px;
+}
+
+.rs img{
+  width: 40px;
+  height: 40px;
+}
