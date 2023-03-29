@@ -27,8 +27,8 @@ footer{
 }
 
 
-body{
-  background-color: #fff;
+.body{
+  background-color: rgb(255, 255, 255);
 }
 
 .contenedor .form .form-header .formtitle{
@@ -40,14 +40,14 @@ body{
 }
 
 .contenedor .form .form-header .form-title span{
-  color:rgb(255, 253, 253);
+  color:#ff9900;
 
 }
 
 .contenedor .form{
-  background: #17171799;
-  width: 90%;
-  max-width: 300px;
+  background: linear-gradient(#d1d1d1,#757575);
+  width: 100%;
+  max-width: 400px;
   margin: auto;
   padding: 5px 35px;
   padding-bottom: 30px;
@@ -57,24 +57,25 @@ body{
 }
 .contenedor .form .form-label{
   display: block;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 16px;
   font-family: cursive;
   position: relative;
   text-align: center;
+ 
 
 }
 .contenedor .form .form-input, .form-textarea{
-  background: #ebe7e7b3;
+  background: #f9f9f9b3;
   border: none;
   outline: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 3px solid #000000;
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 20px;
   font-size: 14px;
-  color: #f0ffff;
+  color: #000000;
   text-align: center;
 
 
@@ -88,16 +89,25 @@ body{
 }
 
 .titulo{
-  color:#8a2be2;
+  color:#000000;
   text-align: center;
 }
 
 .marco{
   width:100%;
   height: 300px;
-  border: 1px solid #808080;
+  border: 1px solid #000000;
   text-align: center;
+  background-image: url(imagenes/teclasdepiano.png);
   
+}
+.btn-submit{
+  background-color: #ff9900;
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top:30px ;
 }
 
 *{
@@ -113,10 +123,11 @@ img{
 .container-title{
   text-align: center;
   font-family: monospace;
-  padding:30px;
-  background-color: #eee;
+  padding:20px;
+  background-color: #ddd;
   margin-bottom: 50px;
   color: #000;
+  font-size: 20px;
 
 }
 
@@ -131,17 +142,90 @@ img{
   flex-direction: column;
 }
 
-.container-precio{
+.container-detalle-prod{
+  padding: 30px 0;
+}
+.form-group{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.container-add-cart{
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.container-cantidad{
+  position: relative;
+}
+.registro, .sesion{
+  height: 80vh;
+}
+
+.sign-up{
+  text-align: center;
+  padding: 10px;
+}
+
+.btn-añadir{
+  border: none;
+  background: #000;
+  color: #989898;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-añadir:hover{
+  color: #ffffff;
+
+}
+.form-group{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 5px;
+  color:#222;
+ font-weight: 700;
+}
+
+.form-group label{
+  width: 100px;
+  color:#222;
+  font-weight: 700;
+}
+
+.container-descripcion, .container-info-adicional{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eee ;
+  padding: 10px 0;
+
+}
+.nombre-prod{
   padding-bottom: 20px;
   border-bottom: 1px solid #f0ffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 30px;
 }
 
 .container-precio span{
-  font-size: 24px;
-  font-weight: 300;
+  background: #787878;
+  background-size: cover;
+  color: #eee;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 50px;
+  float: right;
 }
 
 .container-detalle-prod{
