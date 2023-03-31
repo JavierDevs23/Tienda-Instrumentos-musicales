@@ -17,10 +17,7 @@ footer{
   object-fit: cover;
 }
 
-.carousel-item img {
-  height: 100%;
-  object-fit: cover;
-}
+
 
 .carousel-item {
   height: 70vh;
@@ -98,7 +95,6 @@ footer{
   height: 300px;
   border: 1px solid #000000;
   text-align: center;
-  background-image: url(imagenes/teclasdepiano.png);
   
 }
 .btn-submit{
@@ -248,6 +244,7 @@ img{
 .logo img{
   width: 40px;
   height: 40px;
+  cursor: auto ;
 }
 
 .rs img{
@@ -261,7 +258,7 @@ img{
   }
   
   .card:hover{
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 8px rgba(111, 111, 111, 0.3);
     transition: 0.3s;
   }
 
