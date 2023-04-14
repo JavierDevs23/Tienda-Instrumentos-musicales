@@ -51,23 +51,23 @@
       </iframe>
                  <br><br>
             <div class="contenedor">
-                <form class="form">
+                <form action="#" method="post" class="form">
                     <div class="form-header">
                         <h1 class="form-title">C<span>ontáctanos</span></h1>
                     </div>
                     <label for="nombre" class="form-label">Nombre:</label>
-                    <input type="text" id="nombre" class="form-input" placeholder="Ingrese su nombre">
+                    <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Ingrese su nombre">
                     
                     <label for="email" class="form-label">E-mail:</label>
-                    <input type="text" id="email" class="form-input" placeholder="Ingrese su e-mail">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Ingrese su e-mail">
                     
                     <label for="asunto" class="form-label">Asunto:</label>
-                    <input type="text" id="asunto" class="form-input" placeholder="Asunto">
+                    <input type="text" id="asunto" name="asunto" class="form-input" placeholder="Asunto">
                     
                     <label for="mensaje" class="form-label">Mensaje:</label>
-                    <textarea id="mensaje" class="form-textarea" placeholder="Escriba su mensaje">
+                    <textarea id="mensaje" name="mensaje" class="form-textarea">
                     </textarea>
-                    <input type="submit" class="btn-submit" value="Enviar">
+                    <input type="submit" name="enviar" class="btn-submit" value="Enviar">
 
                 </form>
             </div>
