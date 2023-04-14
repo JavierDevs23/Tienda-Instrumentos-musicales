@@ -234,11 +234,19 @@ img{
 
 .card{
   transition: 1s;
+  display: block;
+  justify-self: center;
+  align-self: center;
 }
 
 .card:hover{
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
+}
+
+.card{
+  display: block;
+  justify-content: center;
 }
 
 .logo img{
