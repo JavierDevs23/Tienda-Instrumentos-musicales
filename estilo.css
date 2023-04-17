@@ -197,7 +197,6 @@ img{
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
 *{
     margin: 0;
     padding:0;
@@ -209,7 +208,6 @@ img{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap:30px;
     grid-row-gap: 30px;
-    /* width: 60%; */
     width: 100%;
     transition: .3s;
 }
@@ -227,8 +225,7 @@ img{
 }
 .contenedor .contenedor-items .item:hover{
     box-shadow: 0 0 10px #666;
-    scale: 1.05;
-}*/
+}
 .contenedor .contenedor-items .item .titulo-item{
     display: block;
     font-weight: bold;
@@ -362,9 +359,6 @@ img{
     cursor: pointer;
     transition: .3s;
 }
-.carrito-total .btn-pagar:hover{
-    scale: 1.05;
-}
 
 @media screen and (max-width: 850px) {
     .contenedor {
@@ -402,6 +396,40 @@ img{
 .footer {
    margin-top: auto; 
    margin-bottom: auto;
-   
 }
 
+body{
+  background-image: url(imagenes/pondopantalla.jpg);
+}
+.Buscar {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: solid 2px rgb(0, 0, 0);
+}
+.btn-3 {
+  width: 80px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: solid 2px rgb(255, 255, 255);
+  color:#ffffff
+  
+}
+.tit-prod{
+  text-align: center;
+  text-transform: uppercase;
+}
+.Buscar :hover {
+  color: #000000;
+}
+
+.btn-3 {
+  color: rgb(255, 255, 255); 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.btn-3:hover {
+  background-color: rgb(255, 255, 255); 
+  color: black;
+}
