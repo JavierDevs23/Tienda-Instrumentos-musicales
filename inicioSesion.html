@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"  crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="imagenes/logo_transparent.png">
 </head>
@@ -27,6 +27,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contacto.html">Contactos</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="acerca.html">Acerca de</a>
+                </li>
               </ul>
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -36,49 +39,170 @@
                   <a class="nav-link" href="Registrarse.html">Registrarse</a>
                 </li>
                 <li class="nav-item">
-                  <button type="button" class="btn btn-outline-light ms-3" data-bs-toggle="modal" data-bs-target="#carritoModal">
-                    <i class="bi bi-cart"></i> Carrito
-                  </button>
+                  <a class="nav-link btn btn-outline-light ms-3" href="#" data-bs-toggle="modal"
+                   data-bs-target="#cartModal" style="color: #ffffff;" onmouseover="this.style.color='black';"
+                    onmouseout="this.style.color='grey';">Carrito de Compras</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
     </header>
-    
-
-
-    <div class="container my-5 contenedor sesion">
-      <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-4">
-          <div class="card shadow">
-            <div class="card-body">
-              <h3 class="card-title text-center mb-4">Iniciar sesión</h3>
+    <!--Formulario de ingreso-->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mt-5">
+          <div class="card-body">
+            <h2 class="text-center mb-4">Iniciar Sesión</h2>
               <form action="#" method="post">
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
-                  <label for="email">Correo electrónico</label>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
                 </div>
-                <div class="form-floating mb-3">
+                <div class="mb-3">
+                  <label for="password" class="form-label">Contraseña</label>
                   <input type="password" class="form-control" id="password" placeholder="Contraseña">
-                  <label for="password">Contraseña</label>
-                  <a href="#" style="float:right;font-size:12px;">¿Ha olvidado su contraseña?</a>
-                </div>           
-              <button type="submit" class="btn btn-primary btn-block" >Ingresar</button>
-              
-              <div class="sign-up">
-                <hr>
-              ¿Aún no tiene una cuenta? <a href="Registrarse.html">¡Regístrese ahora!</a>
-              </div>         
-                <br>
+                </div>
+                <button type="submit" name="ingresar" class="btn btn-dark w-100 mb-3" value="Ingresar">Ingresar</button>
+                <p class="text-center mb-0">
+                  <a href="olvideC.html">Olvidé mi contraseña</a>
+                </p>
+                <p class="text-center mb-0">
+                  <a href="registrarse.html">¿Aún no tiene una cuenta? ¡Regístrese ahora!</a>
+                </p>
               </form>
-            </div>
+              <hr>
+              <p class="text-center mb-3">Ingresa con otras opciones</p>
+              <div class="d-flex justify-content-around mb-3 social-buttons">
+                <button class="btn btn-outline-danger">Gmail</button>
+                <button class="btn btn-outline-primary">Facebook</button>
+                <button class="btn btn-outline-dark">iPhone</button>
+                <button class="btn btn-outline-secondary">Apple</button>
+              </div>
+              <hr>
+              <p class="text-center mb-0">
+                <a href="terminosCondiciones.html">Términos y Condiciones</a> | <a href="politicaprivacidad.html">Política de Privacidad</a>
+              </p>
+              <hr>
+              <p class="text-center mb-0">&copy; Derechos Reservados</p>
           </div>
         </div>
       </div>
     </div>
-   
-    
+  </div>
+
+  <!-- Carrito Modal -->
+  <div class="modal fade custom-modal" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Carrito de compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Aquí se listarán los productos del carrito -->
+          <div class="container modal-producto">
+            <div class="row border-bottom py-2">
+              <div class="col-4">
+                <img src="image/producto_clarinete.jfif" alt="Producto 1" class="img-thumbnail">
+                Producto 1
+              </div>
+              <div class="col-2">$50.000</div>
+              <div class="col-3">
+                <input type="number" class="form-control form-control-sm" value="1" min="1">
+              </div>
+              <div class="col-3">
+                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+              </div>
+            </div>
+            <!-- Agregar más productos aquí -->
+            <div class="row border-bottom py-2">
+              <div class="col-4">
+                <img src="image/producto_clarinete.jfif" alt="Producto 1" class="img-thumbnail">
+                Producto 2
+              </div>
+              <div class="col-2">$50.000</div>
+              <div class="col-3">
+                <input type="number" class="form-control form-control-sm" value="1" min="1">
+              </div>
+              <div class="col-3">
+                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Footer del carrito -->
+          <div class="container mt-3">
+            <div class="row">
+              <div class="col-6">Total:</div>
+              <div class="col-6 text-end">$100.000</div>
+            </div>
+            <div class="row">
+              <div class="col-6">IVA (19%):</div>
+              <div class="col-6 text-end">$19.000</div>
+            </div>
+            <div class="row">
+              <div class="col-6">Cantidad de productos:</div>
+              <div class="col-6 text-end">2</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#paymentModal" data-bs-dismiss="modal">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Formulario y métodos de pago Modal -->
+  <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="paymentModalLabel">Formulario y métodos de pago</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Contenido del modal de forma de pago -->
+        <div class="modal-body">
+          <!-- Agregar formulario de datos de tarjeta aquí -->
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="cardType" class="form-label">Tipo de tarjeta</label>
+              <select class="form-select" id="cardType">
+                <option selected>Selecciona el tipo de tarjeta</option>
+                <option value="visa">Visa</option>
+                <option value="debito">Debito</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="amex">American Express</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="cardName" class="form-label">Nombre en la tarjeta</label>
+              <input type="text" class="form-control" id="cardName" placeholder="Nombre y Apellido">
+            </div>
+            <div class="mb-3">
+              <label for="cardNumber" class="form-label">Número de tarjeta</label>
+              <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456">
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cardExpiry" class="form-label">Fecha de vencimiento</label>
+                <input type="text" class="form-control" id="cardExpiry" placeholder="MM/AA">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cardCVV" class="form-label">Código de seguridad (CVV)</label>
+                <input type="text" class="form-control" id="cardCVV" placeholder="123">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-dark">Realizar compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
      <!-- Footer -->
      <footer class="bg-dark py-4 mt-4">
       <div class="container">
@@ -166,11 +290,7 @@
             <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
           </div>
         </div>
-      </section>
         </div>
-      </div>
-      </div>
-    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-g6p5Y5B5OKV7KrLhLT9NslWzP2Q0t0/rz1+9YtNzJ8n3a3tdcIwrgjNBJ21zRjmFQfquGdc/IK9SpaYfxS1iSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
