@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"  crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="imagenes/logo_transparent.png">
+    <script src="script.js"></script>
 </head>
  <body>
     <header>
@@ -51,28 +52,45 @@
       <iframe class="marco" style="background-image:url(imagenes/bannerpiano.png);">
       </iframe>
                  <br><br>
+                 <div class="mapa-ubicacion">
+                  <div class="contenedor-inform">
+                    <div class="info-ubicacion"><h1>Ubicación</h1></div>
+                    <img src="imagenes/mapfalso.jpg.png" alt="mapa ubicacion">
+                </div><br>
+                <div class="info-contact">¿Tienes alguna pregunta? No dudes en contactarnos
+                </div>
+                <div class="info-horario">Horario de atención
+                </div>
+                <div class="info-contactos">Lunes a Sábado: 9:00 – 19:30 h
+                  Domingos y Festivos: 10:30 – 19:00 h
+                  <br> <br>
+                  Dirección de la tienda: 123 Calle Principal, Ciudad, País
+                  <br> <br>
+                  Teléfono de Contacto:  +1 (555) 123-4567
+                  <br> <br>
+                  Correo de contacto:  contacto@example.com
+                </div>
+                 </div>        
                  <!--Formulario de Contacto-->
-            <div class="contenedor">
-                <form action="#" method="post" class="form">
-                    <div class="form-header">
-                        <h1 class="form-title">C<span>ontáctanos</span></h1>
-                    </div>
-                    <label for="nombre" class="form-label">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Ingrese su nombre">
-                    
-                    <label for="email" class="form-label">E-mail:</label>
-                    <input type="email" id="email" name="email" class="form-input" placeholder="Ingrese su e-mail">
-                    
-                    <label for="asunto" class="form-label">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" class="form-input" placeholder="Asunto">
-                    
-                    <label for="mensaje" class="form-label">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" class="form-textarea">
-                    </textarea>
-                    <input type="submit" name="enviar" class="btn-submit" value="Enviar">
-
-                </form>
-            </div>
+                 <div class="contenedor">
+                  <form action="#" method="post" class="form" onsubmit="return validarFormulario()">
+                      <div class="form-header">
+                          <h1 class="form-title">C<span>ontáctanos</span></h1>
+                      </div>
+                      <label for="nombre" class="form-label">Nombre:</label>
+                      <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Ingrese su nombre">
+              
+                      <label for="email" class="form-label">E-mail:</label>
+                      <input type="email" id="email" name="email" class="form-input" placeholder="Ingrese su e-mail">
+              
+                      <label for="asunto" class="form-label">Asunto:</label>
+                      <input type="text" id="asunto" name="asunto" class="form-input" placeholder="Asunto">
+              
+                      <label for="mensaje" class="form-label">Mensaje:</label>
+                      <textarea id="mensaje" name="mensaje" class="form-textarea"></textarea>
+                      <input type="submit" name="enviar" class="btn-submit" value="Enviar">
+                  </form>
+                </div>
            <br><br>
            <!--Seccion de Boletin-->
            <section class="bg-light py-5">
