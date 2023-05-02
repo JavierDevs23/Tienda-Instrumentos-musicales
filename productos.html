@@ -71,9 +71,9 @@
         <p>Color: Negro</p>
         <p>Precio: $2.000.030</p>
         <div class="quantity-controls">
-          <button class="btn btn-outline-secondary" type="button">-</button>
-          <input type="text" class="form-control" value="1">
-          <button class="btn btn-outline-secondary" type="button">+</button>
+          <button class="btn btn-outline-secondary" type="button" id="decremento">-</button>
+          <input type="text" class="form-control" value="1" id="cantidad-p">
+          <button class="btn btn-outline-secondary" type="button" id="incremento">+</button>
         </div>
         <p>Stock: 10 unidades</p>
         <button class="btn btn-dark" type="button">Comprar</button>
@@ -356,6 +356,7 @@
           </div>
         </div>
         <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="window.location.href='tablacarro.html'">Ir al carrito</button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
           <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#paymentModal" data-bs-dismiss="modal">Comprar</button>
         </div>
@@ -494,5 +495,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
   <script src="script/script.js"></script>
+  <script src="script/validacion.js"></script>
 </body>
 </html>

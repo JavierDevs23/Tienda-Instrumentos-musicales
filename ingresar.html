@@ -51,14 +51,16 @@
         <div class="card mt-5">
           <div class="card-body">
             <h2 class="text-center mb-4">Iniciar Sesión</h2>
-              <form action="#" method="post">
+              <form action="#" method="post" id="formulario-ingresar">
                 <div class="mb-3">
                   <label for="email" class="form-label">Correo Electrónico</label>
-                  <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                  <input type="email" class="form-control" id="email-i" placeholder="nombre@ejemplo.com">
+                  <span id="alerta-email-i"></span>
                 </div>
                 <div class="mb-3">
                   <label for="password" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                  <input type="password" class="form-control" id="password-i" placeholder="Contraseña">
+                  <span id="alerta-contraseña-i"></span>
                 </div>
                 <button type="submit" name="ingresar" class="btn btn-dark w-100 mb-3" value="Ingresar">Ingresar</button>
                 <p class="text-center mb-0">
@@ -194,6 +196,7 @@
           </form>
         </div>
         <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="window.location.href='tablacarro.html'">Ir al carrito</button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
           <button type="button" class="btn btn-dark">Realizar compra</button>
         </div>
@@ -283,5 +286,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
   <script src="script/script.js"></script>
+  <script src="script/validacion.js"></script>
 </body>
 </html>
