@@ -1,0 +1,34 @@
+{
+    "instrumentos": [
+      {
+        "nombre": "Guitarra",
+        "precio": "$20.0",
+        "imagen": "image/producto_guitarra.jpg",
+        "descripcion": "descripción del producto"
+      },
+      {
+        "nombre": "Guitarra",
+        "precio": "$20.0",
+        "imagen": "image/producto_guitarra.jpg",
+        "descripcion": "descripción del producto"
+      },
+      {
+        "nombre": "Guitarra",
+        "precio": "$20.0",
+        "imagen": "image/producto_guitarra.jpg",
+        "descripcion": "descripción del producto"
+      },
+      {
+        "nombre": "Guitarra",
+        "precio": "$20.0",
+        "imagen": "image/producto_guitarra.jpg",
+        "descripcion": "descripción del producto"
+      },
+      {
+        "nombre": "Guitarra",
+        "precio": "$20.0",
+        "imagen": "image/producto_guitarra.jpg",
+        "descripcion": "descripción del producto"
+      }
+    ]
+  }
