@@ -7,25 +7,49 @@
         "descripcion": "descripción del producto"
       },
       {
-        "nombre": "Guitarra",
+        "nombre": "Piano",
         "precio": "$20.0",
         "imagen": "image/producto_guitarra.jpg",
         "descripcion": "descripción del producto"
       },
       {
-        "nombre": "Guitarra",
+        "nombre": "Guitarra Gibson",
         "precio": "$20.0",
         "imagen": "image/producto_guitarra.jpg",
         "descripcion": "descripción del producto"
       },
       {
-        "nombre": "Guitarra",
+        "nombre": "Clarinete",
         "precio": "$20.0",
         "imagen": "image/producto_guitarra.jpg",
         "descripcion": "descripción del producto"
       },
       {
-        "nombre": "Guitarra",
+        "nombre": "Violin",
+        "precio": "$20.0",
+        "imagen": "image/producto_guitarra.jpg",
+        "descripcion": "descripción del producto"
+      },
+      {
+        "nombre": "Batería",
+        "precio": "$20.0",
+        "imagen": "image/producto_guitarra.jpg",
+        "descripcion": "descripción del producto"
+      },
+      {
+        "nombre": "Clarinete",
+        "precio": "$20.0",
+        "imagen": "image/producto_guitarra.jpg",
+        "descripcion": "descripción del producto"
+      },
+      {
+        "nombre": "Violin",
+        "precio": "$20.0",
+        "imagen": "image/producto_guitarra.jpg",
+        "descripcion": "descripción del producto"
+      },
+      {
+        "nombre": "Batería",
         "precio": "$20.0",
         "imagen": "image/producto_guitarra.jpg",
         "descripcion": "descripción del producto"
