@@ -1,5 +1,4 @@
 //Fomulario Olvide Contraseña JavaScript
-
 const resetOption = document.getElementById('resetOption');
 const emailContainer = document.getElementById('emailContainer');
 const phoneContainer = document.getElementById('phoneContainer');

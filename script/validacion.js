@@ -1,13 +1,45 @@
+function validarCorreo(correo) {
+  const re = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+  return re.test(correo);
+}
+
+function tieneDigito(password) {
+  return /\d/.test(password);
+}
+
 //Formulario Registro JQuery
 $(document).ready(function() {
-    function validarCorreo(correo) {
-      const re = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-      return re.test(correo);
+
+  $('#formulario-ingresar').on('submit', function(e) {
+    e.preventDefault();
+
+    let errores = false;
+
+    const email = $('#email-i').val().trim();
+    if (email === '' || !validarCorreo(email)) {
+      $('#alerta-email-i').text('Debes llenar el campo con un correo válido.').css('color', 'red');
+      $('#email-i').css('border-color','red');
+      errores = true;
+    } else {
+      $('#alerta-email-i').text('');
+      $('#email-i').css('border-color','green');
     }
 
-    function tieneDigito(password) {
-      return /\d/.test(password);
+    const password = $('#password-i').val();
+    if (password === '' || password.length < 4 || !tieneDigito(password)) {
+      $('#alerta-contraseña-i').text('Debes llenar el campo con una contraseña de al menos 4 caracteres y que contenga al menos 1 dígito.').css('color', 'red');
+      $('#password-i').css('border-color','red');
+      errores = true;
+    } else {
+      $('#alerta-contraseña-r').text('');
+      $('#password').css('border-color','green');
     }
+
+    if (!errores) {
+      console.log('Formulario enviado correctamente');
+      window.location.href = 'index.html';
+    }
+  });
 
     $('#formulario-registrarse').on('submit', function(e) {
       e.preventDefault();
@@ -97,54 +129,31 @@ $(document).ready(function() {
 
     if (!errores) {
       console.log('Formulario enviado correctamente');
+      window.location.href = 'ingresar.html';
     }
+  
+  });
+
+  // Incrementar la cantidad
+  $('#incremento').on('click', function() {
+    const cantidadInput = $('#cantidad-p');
+    let cantidad = parseInt(cantidadInput.val(), 10);
+    cantidad += 1;
+    cantidadInput.val(cantidad);
+  });
+  
+  // Decrementar la cantidad
+  $('#decremento').on('click', function() {
+    const cantidadInput = $('#cantidad-p');
+    let cantidad = parseInt(cantidadInput.val(), 10);
+  
+    // Evitar que la cantidad sea menor a 1
+    if (cantidad > 1) {
+       cantidad -= 1;
+    }
+  
+    cantidadInput.val(cantidad);
   });
 });
 
 
-//Formulario Iniciar Sesion
-$(document).ready(function() {
-  $("#email-i").on("input", function() {
-    var email = $("#email-i").val();
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      $("#alerta-email-i").text("Debes llenar el campo con un correo válido.");
-    } else {
-      $("#alerta-email-i").text("");
-    }
-  });
-
-  $("#password-i").on("input", function() {
-    var password = $("#password-i").val();
-    if (password.length < 8) {
-      $("#alerta-contraseña-i").text("Debes llenar el campo con una contraseña de al menos 4 caracteres y que contenga al menos 1 dígito.");
-    } else {
-      $("#alerta-contraseña-i").text("");
-    }
-  });
-
-  $("#formulario-ingresar").submit(function(event) {
-    var email = $("#email-i").val();
-    var password = $("#password-i").val();
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailRegex.test(email)) {
-      $("#alerta-email-i").text("Debes llenar el campo con un correo válido.");
-      event.preventDefault();
-    } else {
-      $("#alerta-email-i").text("");
-    }
-
-    if (password.length < 8) {
-      $("#alerta-contraseña-i").text("Debes llenar el campo con una contraseña de al menos 4 caracteres y que contenga al menos 1 dígito.");
-      event.preventDefault();
-    } else {
-      $("#alerta-contraseña-i").text("");
-    }
-  });
-
-  $("span[id^='alerta-']").css("color", "red");
-});
-  if (!errores) {
-      console.log('Formulario enviado correctamente');
-    }
